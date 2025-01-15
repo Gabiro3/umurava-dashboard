@@ -19,30 +19,20 @@ import {
   IconUserOff,
   IconUsers,
 } from '@tabler/icons-react'
-import { AudioWaveform, Command, GalleryVerticalEnd } from 'lucide-react'
+import { AudioWaveform, BriefcaseBusinessIcon, Command, FileBadge2Icon, GalleryVerticalEnd, UserCircle2Icon } from 'lucide-react'
 import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
   user: {
-    name: 'satnaing',
-    email: 'satnaingdev@gmail.com',
+    name: 'Gabiro',
+    email: 'gabirodev@gmail.com',
     avatar: '/avatars/shadcn.jpg',
   },
   teams: [
     {
-      name: 'Shadcn Admin',
+      name: 'Umurava Ltd.',
       logo: Command,
-      plan: 'Vite + ShadcnUI',
-    },
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
+      plan: 'Talent dashboard',
     },
   ],
   navGroups: [
@@ -55,9 +45,9 @@ export const sidebarData: SidebarData = {
           icon: IconLayoutDashboard,
         },
         {
-          title: 'Tasks',
-          url: '/tasks',
-          icon: IconChecklist,
+          title: 'Talent Profile',
+          url: '/settings/account',
+          icon: UserCircle2Icon,
         },
         {
           title: 'Apps',
@@ -65,75 +55,36 @@ export const sidebarData: SidebarData = {
           icon: IconPackages,
         },
         {
-          title: 'Chats',
-          url: '/chats',
+          title: 'Job Board',
+          url: '/jobs',
           badge: '3',
-          icon: IconMessages,
+          icon: BriefcaseBusinessIcon,
         },
         {
-          title: 'Users',
-          url: '/users',
+          title: 'Project Management',
+          url: '/tasks',
           icon: IconUsers,
         },
       ],
     },
     {
-      title: 'Pages',
+      title: 'Finance',
       items: [
         {
-          title: 'Auth',
-          icon: IconLockAccess,
+          title: 'Contracts',
+          icon: FileBadge2Icon,
           items: [
             {
-              title: 'Sign In',
-              url: '/sign-in',
+              title: 'Employee contract',
+              url: '/contracts',
             },
             {
-              title: 'Sign In (2 Col)',
-              url: '/sign-in-2',
+              title: 'Non-disclosure agreement',
+              url: '/contracts',
             },
             {
-              title: 'Sign Up',
-              url: '/sign-up',
-            },
-            {
-              title: 'Forgot Password',
-              url: '/forgot-password',
-            },
-            {
-              title: 'OTP',
-              url: '/otp',
-            },
-          ],
-        },
-        {
-          title: 'Errors',
-          icon: IconBug,
-          items: [
-            {
-              title: 'Unauthorized',
-              url: '/401',
-              icon: IconLock,
-            },
-            {
-              title: 'Forbidden',
-              url: '/403',
-              icon: IconUserOff,
-            },
-            {
-              title: 'Not Found',
-              url: '/404',
-              icon: IconError404,
-            },
-            {
-              title: 'Internal Server Error',
-              url: '/500',
-              icon: IconServerOff,
-            },
-            {
-              title: 'Maintenance Error',
-              url: '/503',
-              icon: IconBarrierBlock,
+              title: 'Freelancing contract',
+              url: '/contracts',
             },
           ],
         },

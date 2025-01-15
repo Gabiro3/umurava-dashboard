@@ -1,6 +1,6 @@
 import { IconSearch } from '@tabler/icons-react'
 import { cn } from '@/lib/utils'
-import { useSearch } from '@/context/search-context'
+import { useSearch, SearchProvider } from '@/context/search-context'
 import { Button } from './ui/button'
 
 interface Props {
@@ -12,6 +12,7 @@ interface Props {
 export function Search({ className = '', placeholder = 'Search' }: Props) {
   const { setOpen } = useSearch()
   return (
+    <SearchProvider>
     <Button
       variant='outline'
       className={cn(
@@ -29,5 +30,6 @@ export function Search({ className = '', placeholder = 'Search' }: Props) {
         <span className='text-xs'>⌘</span>K
       </kbd>
     </Button>
+    </SearchProvider>
   )
 }
