@@ -28,7 +28,15 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      'no-console': 'error',
+      'no-console': 'error',    // Optional: warn about unused variables (like imports)
+    },
+    settings: {
+      'import/resolver': {
+        node: {
+          paths: ['src'],
+        },
+      },
     },
   }
 )
+
