@@ -17,7 +17,7 @@ export const sidebarData: SidebarData = {
   user: {
     name: 'Gabiro',
     email: 'gabirodev@gmail.com',
-    avatar: '/avatars/shadcn.jpg',
+    avatar: '/assets/profile.png',
   },
   teams: [
     {
